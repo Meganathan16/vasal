@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+</head>
+<style>
+
+label {
+  font-size: 40px;
+}
+input {
+  font-size: 40px;
+}
+</style>
+<body>
+  
+      
+      
+    <form>
+        <label for="pswd">Enter password: </label>
+      </br>
+        <input type="password" id="pswd" class="box">
+      </br>
+        <input type="button" value="Submit" onclick="checkPswd();"                              class="confirm" />
+    </form>
+  
+  
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "SPL DEENA";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="index1.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+      
+   
+</body>
+</html>
+  
+
+  
